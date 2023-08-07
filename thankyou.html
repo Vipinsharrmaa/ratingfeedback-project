@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <!-- Thank You Card  -->
+    <div class="card card-2">
+        <div class="selected-img">
+            <img src="./images/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="button button-2">You selected out of 5.</div>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+            touch!</p>
+    </div>
+
+</body>
+<script>
+    const u = localStorage.getItem('userRating');
+    console.log(u);
+    let buttonElement = document.querySelector('.button-2');
+    buttonElement.textContent = `Your rating is ${u} out of 5`
+</script>
+
+</html>
